@@ -1,4 +1,3 @@
-use env_logger;
 use log::info;
 use openmeteo_weather::apis::ip_api::{fetch_user_ip_async, get_lat_lon_from_ip_async};
 use openmeteo_weather::apis::openmeteo_api::{fetch_weather_async, format_human_readable};
