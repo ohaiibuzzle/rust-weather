@@ -33,7 +33,7 @@ pub async fn fetch_weather_async(lat: f32, lon: f32) -> OpenMeteoWeather {
 }
 
 pub fn format_human_readable(weather: &OpenMeteoWeather) -> String {
-    return format!(
+    format!(
         "It's currently {}{} with {}{} relative humidity. The wind is {}{} at {}{} with {}{} cloud cover.",
         weather.current.temperature_2m,
         weather.current_units.temperature_2m,
@@ -45,5 +45,5 @@ pub fn format_human_readable(weather: &OpenMeteoWeather) -> String {
         weather.current_units.wind_direction_10m,
         weather.current.cloud_cover,
         weather.current_units.cloud_cover
-    );
+    )
 }
